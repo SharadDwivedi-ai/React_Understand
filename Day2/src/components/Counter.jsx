@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 export function Counter() {
   const [count, setCount] = useState(0);
-  const handleIncrease = () => setCount(prev => prev + 1);
+  const handleIncrease = () => setCount(prev => prev < 20 ? prev + 1 : 20);
   const handleDecrease = () => setCount(prev => prev > 0 ? prev - 1 : 0);
   const handleReset = () => setCount(0);
 
