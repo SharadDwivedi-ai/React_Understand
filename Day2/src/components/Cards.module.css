@@ -1,0 +1,66 @@
+.head {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  background: gray;
+  padding-bottom: 150px;
+}
+.card {
+  background: rgb(84, 2, 87);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 10px;
+  height: 220px;
+  width: 250px;
+  border-radius: 10px;
+  color: rgb(13, 209, 16);
+}
+
+.bttn {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.btn {
+  gap: 1;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 500;
+  color: red;
+}
+
+.btn1 {
+  gap: 1;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 500;
+  color: green;
+}
+.btn:hover {
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 500;
+  background: red;
+  color: white;
+}
+.btn1:hover {
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 500;
+  background: green;
+  color: white;
+}
