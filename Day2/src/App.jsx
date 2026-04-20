@@ -9,9 +9,9 @@ import { Cards } from './components/Cards';
 function App() {
 
   return (<div>
-    {/* <Toggle />
+    <Toggle />
     <Counter />
-    <Count /> */}
+    <Count />
     <Cards />
   </div>
   )
