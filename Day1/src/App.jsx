@@ -1,6 +1,7 @@
 import { Greeting } from './components/Greeting'
 import { Cards } from './components/Cards'
 import "./App.css"
+import { Cards_upgrade } from './components/Cards_upgrade'
 function App() {
   const cards = [
     {
@@ -43,6 +44,7 @@ function App() {
   return (<div className='cardContainer'>
     <Greeting name="Yashu" />
     <Cards Card={cards} />
+    Toggle
   </div>)
 }
 export default App
