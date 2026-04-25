@@ -1,9 +1,8 @@
-import React from 'react'
-
-function Card({ user, detail }) {
+function Card({ title, description }) {
   return (
 
-    <div className="max-w-xs rounded-md shadow-md bg-black text-gray-100">
+    // Lec 8 - React youtube
+    <div className="max-w-xs rounded-md shadow-md bg-black text-gray-100 m-2">
       <img
         src="https://picsum.photos/301"
         alt=""
@@ -11,9 +10,9 @@ function Card({ user, detail }) {
       />
       <div className="flex flex-col justify-between p-6 space-y-8">
         <div className="space-y-2">
-          <h2 className="text-3xl font-semibold tracking-wide">{user}</h2>
-          <p className="text-gray-400">
-            {detail}
+          <h2 className="text-3xl font-semibold tracking-wide">{title}</h2>
+          <p className="text-gray-200">
+            {description}
           </p>
         </div>
         <button

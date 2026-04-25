@@ -1,22 +1,37 @@
-
 import { useState } from 'react'
 import './App.css'
-import Card from './components/Card'
+import { Cardlist } from './components/Cardlist';
 
 function App() {
-  let myObj = {
+  // Lec 8 - React youtube 
+  const [cards, setCards] = useState([{
     title: "Data Structures",
     desc: "Ways of organizing data (arrays, linked lists, trees, graphs) to enable efficient access and modification."
-  }
-  let myObj1 = {
+  },
+  {
+    title: "React",
+    desc: "Ways of organizing data (arrays, linked lists, trees, graphs) to enable efficient access and modification."
+  },
+  {
+    title: "Data Structures",
+    desc: "Ways of organizing data (arrays, linked lists, trees, graphs) to enable efficient access and modification."
+  },
+  {
     title: "React",
     desc: "Ways of organizing data (arrays, linked lists, trees, graphs) to enable efficient access and modification."
   }
+  ]);
+
+  // Day3- Chatgpt program practice 
+  // const [enrollCourse, setEnrollCourse] = useState([]);
+
   return (
-    <>
-      <Card user={myObj.title} detail={myObj.desc} />
-      <Card user={myObj1.title} detail={myObj1.desc} />
-    </>
+    <div>
+      <h1 className='text-center p-4 font-bold bg-violet-500 text-white'>My Upgraded Courses</h1>
+      <div className='bg-sky-900'>
+        <Cardlist data={cards} />
+      </div>
+    </div>
   )
 }
 
